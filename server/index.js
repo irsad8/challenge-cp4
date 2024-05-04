@@ -111,7 +111,7 @@ http.createServer((req, res) => {
                 filePath = "../public/cars.html";
                 break;
             default:
-                filePath = "../public/index.example.html";
+                filePath = "../public/404.html";
                 break;
         }
 
