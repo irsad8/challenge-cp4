@@ -1,0 +1,96 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.bg-gray {
+    background-color: rgba(241, 243, 255, 1);
+}
+
+.bg-biru {
+    background-color: rgba(13, 40, 166, 1);
+}
+
+.text-biru {
+    color: rgba(13, 40, 166, 1);
+}
+
+.text-grass {
+    color: #5CB85F;
+}
+
+.bg-grass {
+    background-color: #5CB85F;
+}
+
+.line-low {
+    line-height: 1.2;
+    font-size: 0.8rem;
+}
+
+.jumbotron {
+    background: url(../asset/images/img_car.svg), rgba(241, 243, 255, 1);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: right bottom;
+}
+
+.slide-con {
+    border: 1px solid rgba(196, 196, 196, 1);
+    color: black;
+}
+
+.slide-con:hover {
+    border: none;
+    background-color: rgba(92, 184, 95, 1);
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: blue !important;
+}
+
+.star {
+    color: rgba(249, 204, 0, 1);
+}
+
+.testimonial-image {
+    width: 50% !important;
+}
+
+.offcanvas {
+    width: 50vw !important;
+}
+
+@media screen and (max-width: 768px) {
+    .container .row {
+        margin: 0 0;
+    }
+
+    .jumbotron {
+        background-size: 95%;
+        height: 100%;
+    }
+
+    .img-fluid {
+        height: 40vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .testimonial-image {
+        width: 20% !important;
+    }
+}
+
+.panel {
+    border-radius: 25px;
+    margin-top: -70px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

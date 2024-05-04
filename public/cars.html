@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>binar rental car</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="asset/css/owl.theme.default.css">
+</head>
+
+<body>
+
+    <!-- bagian navigasi sticky -->
+    <nav class="navbar navbar-expand-md py-2 bg-gray sticky-top">
+        <div class="container">
+            <a class="navbar-brand bg-biru text-biru" href="#">logo BCR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="offcanvasDarkNavbarLabel" id="navbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">BCR</h5>
+                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-md-auto gap-md-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Our Service</a>
+                        </li>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#why">Why Us</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#testimoni">Testimonial</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#FAQ">FAQ</a>
+                        </div>
+                        <button type="button" class="btn bg-grass nav-item text-light"><b>Register</b></button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- jumbotron -->
+    <div class="jumbotron py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 py-5">
+                    <h2>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h2>
+                    <p class="line-low py-2">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik
+                        dengan
+                        harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+                </div>
+                <div class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- kotak search -->
+    <div class="container">
+        <div class="row justify-content-center panel mb-5">
+            <div class="col py-4">
+                <div class="row">
+                    <div class="col">
+                        <label for="">tipe driver</label>
+                    </div>
+                    <div class="col">
+                        <label for="">tanggal</label>
+                    </div>
+                    <div class="col">
+                        <label for="">waktu jemput/ambil</label>
+                    </div>
+                    <div class="col">
+                        <label for="">jumlah penumpang</label>
+                    </div>
+                    <div class="col-2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <select id="driver" class="form-select" aria-placeholder="pilih tipe driver">
+                            <option selected value="1">dengan supir</option>
+                            <option value="0">tanpa supir (lepas kunci)</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input type="date" id="date" class="form-control" placeholder="pilih tanggal">
+                    </div>
+                    <div class="col">
+                        <input type="time" id="time" class="form-control" placeholder="pilih waktu">
+                    </div>
+                    <div class="col">
+                        <input type="number" id="amount" class="form-control" placeholder="Input 4">
+                    </div>
+                    <div class="col-2">
+                        <button type="button" id="search" class="btn btn-success bg-grass text-light"><b>cari
+                                mobil</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="container">
+        <div class="row" id="cars-container"></div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row gap-2">
+                <div class="col-md-3">
+                    <p class="line-low">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+                    <a class="text-dark link" href="mailto:binarcarrental@gmail.com">binarcarrental@gmail.com</a>
+                    <br>
+                    <a class="text-dark link" href="tel:081233334808">081-233-334-808</a>
+                </div>
+                <div class="col-md-2">
+                    <ul class="navbar-nav  flex-grow-1 gap-md-2 line-low">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Our Service</a>
+                        </li>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#why">Why Us</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#testimoni">Testimonial</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#FAQ">FAQ</a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-md-3 line">
+                    <p>Connect with us</p>
+                    <span class="fa-stack mb-2">
+                        <i class="fa-solid fa-circle fa-stack-2x text-biru"></i>
+                        <i class="fa-brands fa-facebook-f fa-stack-1x text-light"></i>
+                    </span>
+                    <span class="fa-stack mb-2">
+                        <i class="fa-solid fa-circle fa-stack-2x text-biru"></i>
+                        <i class="fa-brands fa-instagram fa-stack-1x text-light"></i>
+                    </span>
+                    <span class="fa-stack mb-2">
+                        <i class="fa-solid fa-circle fa-stack-2x text-biru"></i>
+                        <i class="fa-brands fa-twitter fa-stack-1x text-light"></i>
+                    </span>
+                    <span class="fa-stack mb-2">
+                        <i class="fa-solid fa-circle fa-stack-2x text-biru"></i>
+                        <i class="fa-regular fa-envelope fa-stack-1x text-light"></i>
+                    </span>
+                    <span class="fa-stack mb-2">
+                        <i class="fa-solid fa-circle fa-stack-2x text-biru"></i>
+                        <i class="fa-brands fa-twitch fa-stack-1x text-light"></i>
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <p>&#169; Copyright Binar 2022</p>
+                    <a class="navbar-brand bg-biru text-biru" href="#">logo BCR</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="asset/scripts/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d2d143d3cc.js" crossorigin="anonymous"></script>
+    <script src="asset/scripts/jquery.js"></script>
+    <script src="asset/scripts/owl.carousel.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="./scripts/binar.js"></script>
+    <script src="./scripts/app.example.js"></script>
+    <script src="./scripts/car.example.js"></script>
+    <script src="./scripts/main.example.js"></script>
+</body>
+
+</html>

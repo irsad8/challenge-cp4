@@ -2,7 +2,10 @@ class Car {
   static list = [];
 
   static init(cars) {
+    // let car = cars.filter(i => i.available == true)
     this.list = cars.map((i) => new this(i));
+    // console.log(cars)
+    // console.log(this.list)
   }
 
   constructor({
@@ -41,12 +44,23 @@ class Car {
 
   render() {
     return `
-      <p>id: <b>${this.id}</b></p>
-      <p>plate: <b>${this.plate}</b></p>
-      <p>manufacture: <b>${this.manufacture}</b></p>
-      <p>model: <b>${this.model}</b></p>
-      <p>available at: <b>${this.availableAt}</b></p>
-      <img src="${this.image}" alt="${this.manufacture}" width="64px">
+      <div class="card">
+          <div style="background-image:url(${this.image}); background-size: cover; background-position: center; width: 100%; height: 300px; object-fit: cover;"
+              class="card-img-top"></div>
+          <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">${this.manufacture} / ${this.type}</h6>
+              <h5 class="card-title">Rp.${Number(this.rentPerDay).toLocaleString('id-ID')}/Hari</h5>
+              <p class="card-text">${this.description}</p>
+              <ul class="list-unstyled">
+                  <li class="py-1"><i class="bi bi-people"></i> ${this.capacity} orang</li>
+                  <li class="py-1"><i class="bi bi-gear"></i> ${this.transmission}</li>
+                  <li class="py-1"><i class="bi bi-calendar4"></i> tahun ${this.year}</li>
+              </ul>
+              <div class="d-grid">
+                  <button class="btn btn-primary" type="button">pilih mobil</button>
+              </div>
+          </div>
+      </div>
     `;
   }
 }
