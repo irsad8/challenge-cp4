@@ -128,5 +128,5 @@ http.createServer((req, res) => {
         });
     }
 }).listen(port, 'localhost', () => {
-    console.log(`Server sudah berjalan pada port ${port}`);
+    console.log(`Server berjalan pada port ${port}`);
 });
