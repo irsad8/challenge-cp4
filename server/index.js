@@ -85,7 +85,7 @@ const typeFile = {
 };
 
 http.createServer((req, res) => {
-    let filePath = "../public" + req.url;
+    let filePath = path.join(__dirname ,"..", "public", req.url)
     let extname = path.extname(filePath);
     let contentType = typeFile[extname] || "application/octet-stream";
     console.log(req.url)
@@ -105,13 +105,13 @@ http.createServer((req, res) => {
     } else {
         switch (req.url) {
             case "/":
-                filePath = "../public/index.html";
+                filePath = path.join(__dirname, '..','public','index.html');
                 break;
             case "/cars":
-                filePath = "../public/cars.html";
+                filePath = path.join(__dirname, '..','public','cars.html');
                 break;
             default:
-                filePath = "../public/404.html";
+                filePath = path.join(__dirname, '..','public','404.html');
                 break;
         }
 
@@ -128,5 +128,5 @@ http.createServer((req, res) => {
         });
     }
 }).listen(port, 'localhost', () => {
-    console.log(`Server berjalan pada port ${port}`);
+    console.log(`Server sudah berjalan pada port ${port}`);
 });
